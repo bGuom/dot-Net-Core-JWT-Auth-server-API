@@ -1,0 +1,14 @@
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\bin\Debug\netcoreapp2.2\AuthAPI.deps.json
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\bin\Debug\netcoreapp2.2\AuthAPI.runtimeconfig.json
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\bin\Debug\netcoreapp2.2\AuthAPI.runtimeconfig.dev.json
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\bin\Debug\netcoreapp2.2\AuthAPI.dll
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\bin\Debug\netcoreapp2.2\AuthAPI.pdb
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.csprojAssemblyReference.cache
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.csproj.CoreCompileInputs.cache
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.RazorAssemblyInfo.cache
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.RazorAssemblyInfo.cs
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.AssemblyInfoInputs.cache
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.AssemblyInfo.cs
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.RazorTargetAssemblyInfo.cache
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.dll
+F:\Fiverr\Ernestoco\Auth\AuthAPI\AuthAPI\obj\Debug\netcoreapp2.2\AuthAPI.pdb
