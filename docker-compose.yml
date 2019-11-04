@@ -9,20 +9,18 @@ services:
     build: AuthAPI/
     restart: always
     ports:
-      - "7000:80"
+      - "8000:80"
     depends_on:
       - db-server
     networks:
       - localdev
 
   db-server:
-    image: microsoft/mssql-server-linux:2017-latest
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
     container_name: db-server
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=ernesTOCO123
-      - MSSQL_TCP_PORT=1433
-    ports:
-      - "1400:1433"
+      - SA_PASSWORD=ernesTOCO123
+      - MSSQL_PID=Express
     networks:
       - localdev
