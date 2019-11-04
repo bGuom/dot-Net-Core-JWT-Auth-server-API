@@ -39,7 +39,47 @@ namespace AuthAPI.Controllers
         [HttpGet("index")]
         public IActionResult Index()
         {
-            return Ok(new{status = "Auth Server started"});
+            return Ok(new{
+                status = "Auth Server started",
+                register = new {
+                    type = "POST",
+                    route = "/api/auth/register",
+                    content_type ="JSON",
+                    body =new {
+                        UserName = "TestUser",
+                        Email = "testuser@test.com",
+                        Password = "ABCabc123!@#"
+                    },
+                    response = new
+                    {
+                        UserName = "TestUser",
+                        Email = "testuser@test.com",
+                        Password = "ABCabc123!@#"
+                    },
+                },
+                getToken = new
+                {
+                    type = "POST",
+                    route = "/api/auth/GetToken",
+                    content_type = "JSON",
+                    body = new
+                    {
+                        Email = "testuser@test.com",
+                        Password = "ABCabc123!@#"
+                    },
+                    response = new {
+                        thisuser = new User
+                        {
+                            UserName = "TestUser",
+                            Email = "testuser@test.com",
+                        },
+                        token = "BJG273GJDAS73GDAKJDSH.hgJG7hjvj7jhjgu7jhgj.GUTYGu6GV655Yd3gcH",
+                        expiration = "30mins"
+
+                    },
+                },
+
+            });
         }
 
 
@@ -101,7 +141,7 @@ namespace AuthAPI.Controllers
 
                         var results = new
                         {
-                            thisuser = user,
+                            thisuser = new { UserName = user.UserName, Email = user.Email },
                             token = new JwtSecurityTokenHandler().WriteToken(token),
                             expiration = token.ValidTo
                         };
