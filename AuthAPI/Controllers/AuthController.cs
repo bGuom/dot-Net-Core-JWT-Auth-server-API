@@ -101,6 +101,7 @@ namespace AuthAPI.Controllers
 
                         var results = new
                         {
+                            thisuser = user,
                             token = new JwtSecurityTokenHandler().WriteToken(token),
                             expiration = token.ValidTo
                         };
