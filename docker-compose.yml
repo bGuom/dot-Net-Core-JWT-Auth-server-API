@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3'
 
 networks:
   localdev:
@@ -6,10 +6,10 @@ networks:
 
 services:
   main-api:
-    build: AuthAPI/
+    build: .
     restart: always
     ports:
-      - "8000:5000"
+      - "8000:80"
     depends_on:
       - db-server
     networks:
