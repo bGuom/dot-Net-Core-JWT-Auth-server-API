@@ -7,7 +7,7 @@ services:
     build: AuthAPI/
     restart: always
     ports:
-      - 8000:5000
+      - 8000:80
     depends_on:
       - db-server
 
