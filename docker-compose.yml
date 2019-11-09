@@ -1,21 +1,15 @@
-version: '3.5'
-
-
-
+version: "3"
 services:
-  main-api:
-    build: AuthAPI/
-    restart: always
-    ports:
-      - 8080:80
-    depends_on:
-      - db-server
-
-
-  db-server:
-    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
-    container_name: db-server
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=ernesTOCO123
-      - MSSQL_PID=Express
+    web:
+        build: AuthAPI/
+        restart: always
+        ports:
+            - "8000:80"
+        depends_on:
+            - db-server
+    db-server:
+        image: "mcr.microsoft.com/mssql/server:2017-latest-ubuntu"
+        environment:
+            SA_PASSWORD: "ernesTOCO123"
+            ACCEPT_EULA: "Y"
+            MSSQL_PID:   "Express"
