@@ -8,6 +8,6 @@ namespace AuthAPI.Models
 {
     public class User : IdentityUser<Guid>
     {
-
+        public string DisplayName { get; set; }
     }
 }

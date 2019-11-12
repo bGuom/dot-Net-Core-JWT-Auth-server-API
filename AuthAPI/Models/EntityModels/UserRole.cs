@@ -9,5 +9,8 @@ namespace AuthAPI.Models
     public class UserRole : IdentityRole<Guid>
     {
 
+        public string Description { get; set; }
+        public DateTime DateCreated { get; set; }
+
     }
 }
